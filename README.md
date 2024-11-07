@@ -16,7 +16,6 @@ The module also creates 2 instances in public subnet which has access of s3 buck
 - Creates an internet gateway (IGW) for VPC.
 - Set up route table for public subnets.
 - Creates 2 ec2 instances.
-- Creates 2 shell scripts file for ec2 instances pre-install of some tools.
 - Creates single key with private and public to ssh access of ec2 instance
 - Creates Securities group with own designed rule for access of ec2 instance.
 - Creates 2 s3 buckets. 
