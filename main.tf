@@ -84,7 +84,7 @@ resource "aws_instance" "Instances" {
 
 resource "aws_key_pair" "EC2Keys" {
   key_name   = "${var.environment}-EC2Keys"
-  public_key = file("E:/TerraformDetailedWorkshop/OwnDesignedModule/terrainstance.pub")
+  public_key = file("./terrainstance.pub")
 }
 
 locals {
