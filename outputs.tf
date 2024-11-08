@@ -1,5 +1,6 @@
 output "VPCName" {
-  value = aws_vpc.VPC.id
+  description = "Show the info of VPC."
+  value       = aws_vpc.VPC.id
 }
 
 locals {
@@ -20,23 +21,28 @@ locals {
 }
 
 output "PublicSubnet" {
-  value = local.private_subnet_output
+  description = "Show the info of Public Subnets."
+  value       = local.private_subnet_output
 }
 
 output "PrivateSubnet" {
-  value = local.private_subnet_output
+  description = "Show the info of Private Subnets."
+  value       = local.private_subnet_output
 }
 
 output "IGWName" {
-  value = aws_internet_gateway.IGW
+  description = "Show the info of Internet Gateway."
+  value       = aws_internet_gateway.IGW
 }
 
 output "RouteTableName" {
-  value = aws_route_table.RoutTable
+  description = "Show the info of Route Table."
+  value       = aws_route_table.RoutTable
 }
 
 output "AssociateRouteTableName" {
-  value = aws_route_table_association.AssoRouteTable
+  description = "Show the info of Associate Route Table."
+  value       = aws_route_table_association.AssoRouteTable
 }
 
 locals {
@@ -49,7 +55,8 @@ locals {
 }
 
 output "InstancesName" {
-  value = local.ec2_output
+  description = "Show the info of EC2 instances."
+  value       = local.ec2_output
 }
 
 locals {
@@ -62,6 +69,7 @@ locals {
 }
 
 output "S3BucketName" {
-  value = local.s3_output
+  description = "Show the info of S3 Buckets."
+  value       = local.s3_output
 }
 

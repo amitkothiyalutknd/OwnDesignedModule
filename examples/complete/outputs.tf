@@ -1,31 +1,39 @@
 output "VPCOutput" {
-  value = module.designedModule.VPCName
+  description = "Show the info of VPC."
+  value       = module.designedModule.VPCName
 }
 
 output "PublicSubnetOutput" {
-  value = module.designedModule.PublicSubnet
+  description = "Show the info of Public Subnets."
+  value       = module.designedModule.PublicSubnet
 }
 
 output "PrivateSubnetOutput" {
-  value = module.designedModule.PrivateSubnet
+  description = "Show the info of Private Subnets."
+  value       = module.designedModule.PrivateSubnet
 }
 
 output "IGWOutput" {
-  value = module.designedModule.IGWName
+  description = "Show the info of Internet Gateway."
+  value       = module.designedModule.IGWName
 }
 
 output "RouteTableOutput" {
-  value = module.designedModule.RouteTableName
+  description = "Show the info of Route Table."
+  value       = module.designedModule.RouteTableName
 }
 
 output "AssociateRouteTableOutput" {
-  value = module.designedModule.AssociateRouteTableName
+  description = "Show the info of Associate Route Table."
+  value       = module.designedModule.AssociateRouteTableName
 }
 
 output "InstancesOutput" {
-  value = module.designedModule.InstancesName
+  description = "Show the info of EC2 instances."
+  value       = module.designedModule.InstancesName
 }
 
 output "S3BucketOutput" {
-  value = module.designedModule.S3BucketName
+  description = "Show the info of S3 Buckets."
+  value       = module.designedModule.S3BucketName
 }
