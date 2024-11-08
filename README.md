@@ -7,7 +7,7 @@ This is sample example of manually designed terraform module. This module is res
 It also has two route table, first one for public subnets via route table association resource and second one  for private
 subnets. It also creates 2 s3 buckets in which 1 has enabled versioning feature.
 
-The module also creates 2 instances in public subnet which has access of s3 bucket via IAM role.
+The module also creates 2 instances in public subnet which have access of s3 buckets via IAM role.
 
 ## Features
 
